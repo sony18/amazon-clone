@@ -1,9 +1,9 @@
 # This is cloned project on Amazon.co.uk using react.js
 
 ## module used
-react-slick 
-react-currency-format
-react-sidebar
+- react-slick 
+- react-currency-format
+- react-sidebar
 ### `Features & Functionality`
 -  display products on app loads
 -  add item to basket
