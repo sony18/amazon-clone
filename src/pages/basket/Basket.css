@@ -1,0 +1,52 @@
+/*  Layout style:  2 column */
+.basket{
+    display:grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap:20px;
+    padding: 30px 50px;
+    margin-top:70px;
+}
+.basket__left
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.basket a{
+    text-decoration: none;
+    color:#0066c0;
+}
+.basket a:hover{
+    text-decoration: underline;
+    color:#0066c0;
+}
+.basket__advert{
+    border:1px solid ;
+    border-color:#adc5d8 #8cb3d3  #cbcbf7;
+    padding:10px;
+    margin-bottom:30px;
+}
+.basket__left > h3{
+    color:#818181;
+    font-size: 30px;
+}
+
+.basket__left-subtotal{
+  margin-left:auto;
+    border-top:1px solid lightgray;
+    font-size: 22px;
+}
+.basket__left-figure{
+    font-weight: 600;
+}
+
+@media (max-width:700px){
+    .basket{ 
+        display: block;
+        margin-top:150px;
+    }
+    .basket__subtotal{
+        max-width:400px;
+        margin:20px auto;
+    }
+}

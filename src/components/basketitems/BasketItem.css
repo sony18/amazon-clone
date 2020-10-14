@@ -1,0 +1,59 @@
+.basketitem{
+    display: flex;
+    align-items:flex-start;
+    margin:20px 0;
+}
+.basketitem__img{
+width:20vw;
+max-height: 10vw;
+object-fit: contain;
+}
+.basketitem__description{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding:0 5px ;
+}
+.basketitem__description a{
+    font-size: 23px;
+}
+.basketitem__gift{
+    display: flex;
+    align-items: center;
+    padding:10px 0;
+}
+
+.basketitem__gift .MuiSvgIcon-root{
+    font-size: .8em!important;
+    margin-right:.3em;
+    background: #ffffff;
+}
+
+.basketitem__edit a{
+    font-size: 14px;
+}
+.basketitem__price{
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    color:#616161;
+}
+.basketitem__unit{
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.basketitem__button.MuiButton-root{
+    margin:0 .5em;
+    line-height: 1;
+    text-transform: inherit;
+}
+
+.basketmessage{
+    display: flex;
+    flex-direction: column;
+}
+
+#demo-simple-select{
+    padding-right:30px;
+}

@@ -1,0 +1,96 @@
+.home{
+    max-width: 1800px;
+    background: #EAEDED;
+    padding-bottom:10px;
+}
+
+.home__hero{
+    width:100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,.7),rgba(0,0,0,0));
+    margin-bottom: -350px;
+    z-index: -1;
+    height:100vh;
+    object-fit: fill;
+}
+/* Row style rules of homepage */
+.home__row{
+    max-width:100%;
+    display: flex;
+    margin:0 10px;
+}
+/* one of flex item of  first row in homepage */
+.home__card{
+    display: flex;
+    flex-direction: column;
+    min-height:500px;
+    min-width:200px;
+    width:100%;
+    background: transparent;        
+    z-index: 1;
+    margin:10px 10px;
+    border-top:1px solid lightgrey;
+    }
+    .home__card-bottom{
+    display: grid;
+    justify-content: center;
+    align-items:flex-end; 
+    min-height:350px;
+    flex:.8;
+    min-width:200px;
+    color:#353333;
+    position: relative;
+    padding:30px;
+
+}
+.home__card-bottom> img{
+    position: absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    opacity:1;
+    z-index: -1;
+}
+.home__card-bottom >h3{
+    font-size: 25px;
+    letter-spacing: .1rem;
+}
+.home__card-signin{
+    background: linear-gradient(to bottom, rgb(21, 50, 61),rgba(0,0,0,.3));
+    border:1px solid light silver;
+    flex:.2;
+    justify-self:start;
+    color:#ffffff;
+    min-height:150px;
+    width:100%;
+    margin-bottom:20px;
+    padding:30px 30px 50px;   
+}
+
+.MuiSvgIcon-root {  
+    font-size: 3rem!important;
+    color: #ffffff;
+    cursor: pointer;
+}
+.slick-list{
+    overflow: unset;
+}
+.nextArrow{
+right:30px;
+}
+.prevArrow{
+    left:30px;
+    }
+
+@media (max-width:799px){
+    .home__row{
+        flex-wrap: wrap;
+        margin:0 50px;
+    }
+    /* keep sign in always on top in small screen    */
+    .home__card{
+        order:-1; 
+    }
+   
+ 
+}
+

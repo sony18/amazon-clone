@@ -1,0 +1,84 @@
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    max-width:400px;
+    width:100%;
+    margin:50px auto 100px; 
+    margin-top:80px;
+   
+}
+.signin__logo{
+    max-width:100px;
+    object-fit: contain;
+    margin:20px auto;
+}
+.signin__form{    
+    display: flex;
+    width:100%;
+    padding:20px 20px 5px;
+    border:1px solid lightgray;
+    flex-direction: column;
+    margin-bottom:20px;    
+}
+.signin__form-title{
+    margin-bottom:10px;
+}
+.signin__form-condition{
+    color:dodgerblue;
+}
+.signin__form-help{
+    display: flex;
+    margin-top:20px;
+}
+
+.signin__signin-button.MuiButton-contained{
+    margin:10px 0;
+    text-transform: inherit;
+    background: #F1CA66;    
+    color:#000000;
+    border-radius: unset;
+    outline:unset;
+    border:1px solid rgb(194, 144, 52);
+}
+.signin__signin-button.MuiButton-contained:hover{
+    text-transform: inherit;
+    box-shadow: unset;
+    background: #d8ac3c;
+    border:#d8b253,#d8ac3c;
+    border-radius: unset;
+}
+
+.signin__register-button.MuiButton-contained{
+    text-transform: inherit;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #4c5b61 1%, transparent);
+    border:1px solid #cddee6;
+    transition: all .2s linear;
+}
+.signin__register-button.MuiButton-contained:hover{
+    background: linear-gradient(180deg, #638696 2%, transparent);
+}
+.signin__divider{
+    display: flex;
+    text-align: center;
+    line-height: 0;
+    margin-bottom:20px;
+}
+.signin__divider >p{
+    margin:0 2px;
+    flex:1;
+    color:#1a729b
+}
+.signin__divider-line{
+    display:block;
+    flex:.7;   
+    border-color: #fffdfd;  
+}
+
+@media (max-width:700px){
+    .signin{
+margin-top:170px;
+    }
+
+}

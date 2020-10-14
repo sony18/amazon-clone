@@ -1,0 +1,33 @@
+.checkout{
+    padding: 30px 50px;
+    margin-top:70px;
+}
+
+.checkout__itemsTitle{
+    color:#656565;
+}
+.checkout__orderItems{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    border:1px solid lightgray;
+    padding:20px;
+    margin:20px 0;
+}
+.checkout__deliveryOption{
+    margin-left:20px;
+}
+
+
+  @media (max-width:700px){
+    .checkout{
+        display:block;
+        margin-top:170px;
+    }
+    .checkout__left-orderItems{
+        display: flex;
+     flex-direction: column;
+    }
+
+
+}

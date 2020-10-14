@@ -1,0 +1,79 @@
+
+.subtotal{
+    display: flex;
+    flex-direction: column;
+    min-width:300px;
+    background: #F3F3F3;
+    padding:30px;
+    border-radius: 2px;
+    border:2px solid lightgray;    
+}
+.subtotal__span{
+    font-weight: 400;
+}
+.total__divider{
+    border-bottom:1px solid lightgray;
+    margin-top:5px;
+}
+.subtotal__button.MuiButton-root{
+    width:100%;
+    max-width:300px;
+    text-transform: inherit;
+    background: #FFD814;    
+    color:#000000;
+    margin-top:20px;
+}
+.subtotal__button.MuiButton-contained:hover{
+    text-transform: inherit;
+    box-shadow: unset;
+    background: #d8ac3c;
+    border:#d8b253,#d8ac3c;
+}
+
+.subtotal__postage,
+.subtotal__price,
+.subtotal__total{
+    display: flex;
+    justify-content: space-between;
+}
+span.subtotal__qty{
+   font-weight: normal!important;
+   font-size: 18px!important;
+}
+
+.subtotal__postage{
+    color:#868686;
+}
+
+.subtotal__postage span,
+.subtotal__price span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.subtotal__total p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.subtotal__total span{
+    font-size:20px ;
+    font-weight: 500;
+}
+.subtotal__gift{
+    display: flex;
+    align-items: center;
+    padding:10px 0 0;
+    
+}
+.subtotal__gift .MuiSvgIcon-root{
+    font-size: .8em!important;
+    margin-right:.3em;
+    background: #ffffff;
+}
+
+
+@media (max-width:700px){
+    .subtotal{
+        max-width:400px;
+        margin:20px 0;
+    }
+}

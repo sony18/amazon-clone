@@ -1,0 +1,39 @@
+
+.paymentDetail{
+    border:1px solid lightgray;
+    padding:10px;
+}
+.paymentDetail__title{
+   font-size: 20px;
+   margin-bottom: 10px;
+   font-weight: 500;
+}
+.paymentDetail__content{
+    display: flex;
+    justify-content: space-between;
+}
+.paymentDetail__cardElement{
+    flex:.5;
+    display: flex;
+    flex-direction: column;
+}
+.paymentDetail__note{
+    padding-top:2rem;
+}
+.paymentDetail__buynow .MuiButton-root{
+min-width:100%;
+background: #edba15;
+transition: all .3s linear;
+}
+.paymentDetail__buynow .MuiButton-root:hover{
+    background:linear-gradient(180deg, #152030 5%,#5a78a5);
+    color:#ffffff;
+    }
+    
+
+    @media (max-width:800px){
+        .paymentDetail__content{
+            flex-direction: column;
+        }
+       
+    }
