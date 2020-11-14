@@ -103,61 +103,65 @@ const Header = () => {
 				</form>
 
 				<div className="header__right">
-					<Link to="/" className="header__link">
-						<div className="header__right-link">
-							<p className="header__right-linkGreeting">
-								Hello,{" "}
-								<span className="header__right-linkUser">
-									{loggedinUser?.displayName
-										? loggedinUser.displayName
-										: loggedinUser?.email
-										? loggedinUser.email
-										: "visitor"}
-								</span>
-							</p>
-							<p>Account</p>
-						</div>
-					</Link>
-					<Link to="/" className="header__link">
-						<div className="header__right-link">
-							<p>Returns</p>
-							<p> Orders</p>
-						</div>
-					</Link>
-					<Link to="/" className="header__link">
-						<div className="header__right-link">
-							<p>Try</p>
-							<p>Prime</p>
-						</div>
-					</Link>
-					<Link to="/basket" className="header__link">
-						<div className="header__right-basket">
-							<div className="header__right-basketFlexCol">
-								<p className="header__right-basketQty">
-									{selectBasketTotalItem(basket)}
+					<div className="header__right-innerwrapper">
+						<Link to="/" className="header__link">
+							<div className="header__right-link">
+								<p className="header__right-linkGreeting">
+									Hello,{" "}
+									<span className="header__right-linkUser">
+										{loggedinUser?.displayName
+											? loggedinUser.displayName
+											: loggedinUser?.email
+											? loggedinUser.email
+											: "visitor"}
+									</span>
 								</p>
-								<ShoppingCartOutlinedIcon />
+								<p>Account</p>
 							</div>
-							<p> Basket </p>
-						</div>
-					</Link>
-					<Link
-						to={
-							(!loggedinUser?.displayName || !loggedinUser?.email) &&
-							"/signin"
-						}
-						className="header__link"
-					>
-						<Button
-							variant="contained"
-							color="secondary"
-							size="small"
-							className="header__right-signout"
-							onClick={signout}
+						</Link>
+						<Link to="/" className="header__link">
+							<div className="header__right-link">
+								<p>Returns</p>
+								<p> Orders</p>
+							</div>
+						</Link>
+						<Link to="/" className="header__link">
+							<div className="header__right-link">
+								<p>Try</p>
+								<p>Prime</p>
+							</div>
+						</Link>
+					</div>
+					<div className="header__right-innerwrapper">
+						<Link to="/basket" className="header__link">
+							<div className="header__right-basket">
+								<div className="header__right-basketFlexCol">
+									<p className="header__right-basketQty">
+										{selectBasketTotalItem(basket)}
+									</p>
+									<ShoppingCartOutlinedIcon />
+								</div>
+								<p> Basket </p>
+							</div>
+						</Link>
+						<Link
+							to={
+								(!loggedinUser?.displayName || !loggedinUser?.email) &&
+								"/signin"
+							}
+							className="header__link"
 						>
-							{loggedinUser?.email ? "sign out" : "sign in"}
-						</Button>
-					</Link>
+							<Button
+								variant="contained"
+								color="secondary"
+								size="small"
+								className="header__right-signout"
+								onClick={signout}
+							>
+								{loggedinUser?.email ? "sign out" : "sign in"}
+							</Button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</>

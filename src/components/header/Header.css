@@ -1,9 +1,9 @@
 
 .header{
-     position: fixed;
+    position: fixed;
     top:0;
     left:0;
-     z-index:999; 
+    z-index:999; 
     display: flex;
     align-items: center;
     background:#071b38;
@@ -25,14 +25,16 @@
     padding:5px 0;
 }
  a.header__sidebar-link { 
-     text-decoration: none;
+    text-decoration: none;
     color:rgb(0, 166, 255);
     font-size: 20px;
     cursor: pointer;
+    transition: all .3s ease-in-out;   
+
 }
 a.header__sidebar-link:hover{
     text-decoration: underline;
-    border:unset!important;    
+    border:unset!important; 
 } 
 /* ============================= TOP NAV rules =========================== */
 /* Burger icon */
@@ -124,7 +126,11 @@ a.header__link:hover{
 .header__right-link p:nth-child(2),
 .header__right-basket{
     font-size: 14px;
-font-weight: bolder;
+    font-weight: bolder;
+}
+.header__right-innerwrapper{
+    display: flex;
+    align-items: center;
 }
 .header__right-basket{
     display: flex; 
@@ -134,6 +140,7 @@ font-weight: bolder;
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content:last baseline;
 }
 .header__right-basketQty{
     font-size: 15px;
@@ -151,13 +158,27 @@ font-weight: bolder;
     margin-left:5px;
 }
 
-@media ( max-width:700px ){
+@media ( max-width:599px ){
     .header{
         flex-direction: column;
-        align-items: flex-start;
-    
+        align-items:last baseline ;
+        padding:10px;
     }
   .header__search{
     margin-left:0px;
   }
+
+  .header__right{
+      flex-direction: column;
+      align-items: baseline;
+  }
+ 
+}
+
+@media ( max-width:999px ){
+    .header{
+        flex-direction: column;
+        align-items:last baseline ;
+        padding:10px;
+    } 
 }
