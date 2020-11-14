@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"prettier.tabWidth": 3,
+"prettier.htmlWhitespaceSensitivity": "ignore",
+"prettier.useTabs": true
+}
